@@ -1,8 +1,8 @@
 #Specify variables
-$User = "admin@tenant.onmicrosoft.com"
-$SiteURL = "https://tenant.sharepoint.com/sites/teamtest"
+$User = "admin@<tenant>.onmicrosoft.com"
+$SiteURL = "https://<tenant>.sharepoint.com/sites/teamtest"
 $DocLibName = "Documents"
-$FileName = "C:\Users\hali3\Downloads\0.5GBtest.txt"
+$FileName = "C:\Users\xx\0.5GBtest.txt"
 #Add references to SharePoint client assemblies
 ##Replace the path of your "Microsoft.SharePoint.Client.dll" & "Microsoft.SharePoint.Client.Runtime.dll"
 Add-Type -Path "C:\Program Files\WindowsPowerShell\Modules\SharePointPnPPowerShellOnline\3.13.1909.0\Microsoft.SharePoint.Client.dll"

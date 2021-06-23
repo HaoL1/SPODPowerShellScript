@@ -5,7 +5,7 @@
 #region Variables 
 $Username = "xxxxx@xxx.onmicrosoft.com"
 $Password = "xxxxxxxxxxxxxxxxxxxxxxxxx" 
-$siteURL = "https://mymailunisaedu.sharepoint.com/sites/..." 
+$siteURL = "https://<tenant>.sharepoint.com/sites/..." 
 #endregion Variables
  
 #region Credentials 
@@ -36,7 +36,7 @@ Write-Host "Script complete"
 #region Variables 
 $Username = "xxxxx@xxx.onmicrosoft.com"
 $Password = "xxxxxxxxxxxxxxxxxxxxxxxxx" 
-$siteURL = "https://mymailunisaedu.sharepoint.com/sites/..." 
+$siteURL = "https://<tenant>.sharepoint.com/sites/..." 
 #endregion Variables
  
 #region Credentials 

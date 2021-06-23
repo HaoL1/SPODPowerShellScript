@@ -1,7 +1,7 @@
 #1.User:
 #Get Cedential
 ##Replace TenantURL with yours
-$TenantURL = "https://hali3-admin.sharepoint.com" 
+$TenantURL = "https://<tenant>-admin.sharepoint.com" 
 $Cred = Get-Credential
  
 #Connect to SPO
@@ -40,7 +40,7 @@ $member.UserPrincipalName | Out-File C:\1.txt
 echo "Export Group finished"
 #Connect to SPO
 ##Replace TenantURL with yours
-$TenantURL = "https://hali3-admin.sharepoint.com" 
+$TenantURL = "https://<tenant>-admin.sharepoint.com" 
 Connect-SPOService -Url $TenantURL -Credential $Cred
 #Set OneDrive NoAccess/Unlock
 $AllOneDrivesite=Get-SPOSite -IncludePersonalSite $true -Limit all -Filter "Url -like '-my.sharepoint.com/personal/'"

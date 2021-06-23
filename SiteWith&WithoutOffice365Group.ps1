@@ -1,6 +1,6 @@
 #Get Cedential
 ##Replace TenantURL with yours
-$TenantURL = "https://hali3-admin.sharepoint.com" 
+$TenantURL = "https://<tenant>-admin.sharepoint.com" 
 $Cred = Get-Credential
  
 #Connect to SPO

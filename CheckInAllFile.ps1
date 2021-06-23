@@ -5,7 +5,7 @@ Add-Type -Path ($packagesPath + "/Microsoft.SharePoint.Client.Runtime.dll")
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12;
 $userName = Read-Host -Prompt 'Enter your email address' 
 $pwd = Read-Host -Prompt 'Enter your password' -AsSecureString
-$SiteURL = "https://hali3.sharepoint.com/sites/teamtest"
+$SiteURL = "https://<tenant>.sharepoint.com/sites/teamtest"
 $context = New-Object Microsoft.SharePoint.Client.ClientContext($SiteURL)
 $context.Credentials = New-Object Microsoft.SharePoint.Client.SharePointOnlineCredentials($userName, $pwd)
 

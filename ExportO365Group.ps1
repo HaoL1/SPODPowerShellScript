@@ -9,7 +9,7 @@ Import-PSSession $Session -DisableNameChecking
 $content=Get-UnifiedGroupLinks -Identity "Teamtest"  -LinkType Members
 function append-text { 
     process{ 
-    foreach-object {$_ + "@hali3.onmicrosoft.com"} 
+    foreach-object {$_ + "@<tenant>.onmicrosoft.com"} 
     } 
     } 
 $y = $content.name | append-text
