@@ -1,7 +1,4 @@
-
-
-
-# 1.User:
+#1.User:
 #Get Cedential
 ##Replace TenantURL with yours
 $TenantURL = "https://hali3-admin.sharepoint.com" 
@@ -24,7 +21,12 @@ foreach ($account in $AllOneDrivesite) {
     }
 }
 
-# 2.O365 group:
+
+
+###################
+
+
+#2.O365 group:
 #Get Cedential
 $Cred = Get-Credential
 #Connect to AzureAD

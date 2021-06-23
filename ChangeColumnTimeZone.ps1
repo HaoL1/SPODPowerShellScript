@@ -1,4 +1,4 @@
-# 1.If you want to change the time zone when add new item.
+#1.If you want to change the time zone when add new item.
 
  
 #Please replace the below variables with yours.
@@ -25,8 +25,12 @@ $field = Get-PnPField -List $listName -Identity $fieldName
 $schemaXml.Field.DefaultFormula=$newFormula
 Set-PnPField -List $listName -Identity $fieldName -Values @{SchemaXml=$schemaXml.OuterXml}
 Write-Host "Script complete"
+
+
+###################
+
  
-# 2.If you want to change the time value shows in the “start column” of all the existed items (which won’t change by the scripts above).
+#2.If you want to change the time value shows in the “start column” of all the existed items (which won’t change by the scripts above).
  
 #Please replace the below variables with yours.
 #region Variables 
