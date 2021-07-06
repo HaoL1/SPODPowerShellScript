@@ -12,5 +12,5 @@ Function RestoreItems {​
         }​
     }​
 }​
-# Run the function to restore the items.​
+# Run the function to restore the items.​The time system "MM/DD/YY" is based on the system time format of your computer, change it if you are "DD/MM/YY".
 RestoreItems -deletedByName 'Firstname Lastname' -deletedOnOrAfterDate '01-13-2020​'
