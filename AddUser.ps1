@@ -78,7 +78,7 @@ $5minutesago=(Get-Date).AddMinutes(-1440)
 $rightNow=Get-Date
 $AADUsers=Get-AzureADUser-Filter "userType eq 'Guest'"-All $true|?{$_.RefreshTokensValidFromDateTime-gt$5minutesago-and$_.RefreshTokensValidFromDateTime-lt$rightNow}|where{$_.UserType-eq'Guest'}#| Select-Object DisplayName, UserState, UserType, RefreshTokensValidFromDateTime
  
-foreach($aaduserin$AADUsers)
+foreach($aaduser in $AADUsers)
 {
 $aaduser.Mail
    # Do work here
