@@ -1,5 +1,5 @@
 # Connect to SPO via PnP
-Connect-PnPOnline -Url <SiteURL>
+Connect-PnPOnline -Url
 # If the connect command succeeded, Get-PnPList should print a list of lists.​
 Get-PnPList​
 # The following function filters Recycle Bin items by Deleted By and Deleted Date, prints item info, and restores the item.​
