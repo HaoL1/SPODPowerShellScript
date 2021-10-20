@@ -1,4 +1,4 @@
 # SPODPowerShellScript
 
 
-This is the SPOD PowerShell Script I used mostly in the daily work.
+This stores the SPOD PowerShell scripts I used mostly in the daily work.
