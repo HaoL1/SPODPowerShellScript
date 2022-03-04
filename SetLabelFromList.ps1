@@ -13,7 +13,7 @@ $ListName = "TestList"
 #Get credential
 $cred = New-Object System.Management.Automation.PsCredential($AdminAccount,$password)
 #Connect to SCC,SPO and PnP
-#Connect-IPPSSession -Credential $cred
+Connect-IPPSSession -Credential $cred
 Connect-SPOService -Url $SharePointAdminUrl -Credential $cred
 Connect-PnPOnline -Url $SharePointListSiteURL -Credentials $cred
 
